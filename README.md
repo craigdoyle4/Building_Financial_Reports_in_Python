@@ -19,6 +19,5 @@ This project builds a mini financial-analysis pipeline in Python using two real 
 - **Industry-level comparison** and interpretation of financial metrics  
 - **End-to-end workflow**: loading → merging → analysis → insights  
 
-## 🎯 Purpose of the Project
-The project replicates a realistic financial-analysis task: preparing ratios for cross-industry comparison and visualising risk–return patterns. It demonstrates your ability to use Python for practical finance-focused analytics that support decision-making.
+
 
