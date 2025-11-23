@@ -1,42 +1,24 @@
-# 📊 Building Financial Reports Using Python  
-*A data-driven financial analysis project using Python, Pandas, and Seaborn.*
+## 📌 Project Overview
+This project builds a mini financial-analysis pipeline in Python using two real datasets: **Balance_Sheet.xlsx** and **Income_Statement.xlsx**. The goal is to combine, clean, and analyse company financials to help a hedge-fund manager understand performance across industries. :contentReference[oaicite:0]{index=0}
 
-## 📘 Overview  
-This project demonstrates how to build automated, scalable financial reports using Python.  
-The goal is to go beyond manual Excel work by programmatically merging financial statements, calculating core financial ratios, creating sector-level comparisons and visualising key relationships.
+## 🧠 What the Project Does
+- Loads and processes financial data from two separate Excel files  
+- Merges balance-sheet and income-statement data into one analysis-ready DataFrame  
+- Calculates key financial ratios:
+  - **Gross profitability ratio** (gross margin)
+  - **Leverage ratio** (debt-to-equity)
+- Uses **pivot tables** to compare profitability and leverage across industry types (tech, FMCG, real estate)
+- Performs a focused analysis on the real-estate sector to see whether higher leverage correlates with higher profitability
+- Generates a **regression plot** showing a positive relationship between leverage and profitability for real-estate companies (page 3 of the PDF) :contentReference[oaicite:1]{index=1}
 
-The workflow combines **Balance Sheet** and **Income Statement** data into a single, analysis-ready dataset. From there, it computes profitability and leverage metrics across multiple industries and presents them in a clear, repeatable way.
+## 🛠 Skills Demonstrated
+- **Data cleaning & merging** using pandas  
+- **Financial ratio computation** (profitability & leverage)  
+- **Exploratory data analysis (EDA)** with pivot tables  
+- **Visualisation** using seaborn regression plots  
+- **Industry-level comparison** and interpretation of financial metrics  
+- **End-to-end workflow**: loading → merging → analysis → insights  
 
-This project showcases the ability to  
-- Handle and structure large, multi-source financial datasets  
-- Apply core financial ratios in code  
-- Perform sector-level comparisons  
-- Automate reporting logic  
-- Visualise financial relationships with regression plots  
+## 🎯 Purpose of the Project
+The project replicates a realistic financial-analysis task: preparing ratios for cross-industry comparison and visualising risk–return patterns. It demonstrates your ability to use Python for practical finance-focused analytics that support decision-making.
 
----
-
-## 🧾 Data & Processing Workflow  
-
-### 1. Data Import and Merge  
-Two Excel files are used as inputs  
-
-- `Balance_Sheet.xlsx`  
-- `Income_Statement.xlsx`  
-
-Using `pandas`, these are merged into a unified DataFrame (`df_ratios`) on common keys  
-
-- `Company`  
-- `comp_type` (industry type)  
-- `Year`  
-
-This creates one table containing both income statement and balance sheet data for each company and year.
-
-### 2. Calculating Key Financial Ratios  
-
-Two core financial ratios are calculated for each company  
-
-#### Gross Margin Ratio  
-Formula  
-```text
-( Total Revenue - Cost Of Goods Sold ) / Total Revenue
